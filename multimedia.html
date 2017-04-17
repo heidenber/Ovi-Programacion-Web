@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="Heidenber Palacio" name="author">
+	<meta content="Sitio web con material de Programacion web" name="description">
+	<meta content="UNAD, programación web, html" name="keywords">	
+	<title>OVI Programación Web 1</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+	<div id="contenedor">
+		
+		<header>
+			<img src="img/header.png" alt="Banner">
+		</header>
+
+		<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="definiciones.html">Definiciones</a></li>
+			<li><a href="lecturas.html">Lecturas</a></li>
+			<li><a href="multimedia.html">Material multimedia</a></li>
+			<li><a href="autor.html">Autor</a></li>
+		</ul>
+
+		</nav>
+
+		<section>
+			<article>
+				
+				<h2>Trabajar con MySQL desde PHP</h2>
+
+				<p><b>Video Instalación WamppServer</b></p>
+
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/m4wtuq-Z5sU" frameborder="0" allowfullscreen></iframe></center>
+
+				<p><b>Conexión BD con PHP y MySQL</b><br>
+				Antes de trabajar con MySQL, vamos ver los queries más cómunes:<br><br>
+				<b>Para mostrar los registros de:</b><br><br>
+				
+				•	SELECT * FROM tabla [Muestra todos los resultados de BD]<br>
+				•	SELECT id,nombre,apellido FROM tabla [Muestra todos los resultados de BD pero solo las columnas id, nombre y apellido]<br>
+				•	SELECT * FROM tabla WHERE id = '1' [Muestra los resultados que tengan la columna con id 1]<br>
+				•	SELECT * FROM tabla WHERE pais = 'Italia' ORDER by id ASC [Muestra los resultados que tengan la columna país con valor <br>Italia ordenándolo por la columna id en modo ascendente]<br>
+				•	SELECT * FROM tabla ORDER by id DESC LIMIT 10 [Muestra los resultados de BD en orden descendeente por columna id limitándolo solo a 10 resultados]<br>
+				•	SELECT * FROM tabla ORDER by RAND() [Muestra los resultados de BD en un orden aleatorio]<br><br>
+				<b>Para agregar registros:</b><br><br>
+				•	INSERT into tabla (nombre, apellido, pais, idioma) VALUES (Heidenber, 'Palacio', 'Colombia', 'ES') [Agrega un registro con nombre: Heidenber, apellido: Palacio, país: Colombia, idioma: ES de español]<br>
+				•	INSERT into tabla (id, nombre) VALUES (NULL, '$_POST[nombre]') [Agrega en la base de datos un registro con id NULL, es decir sería automático o vacía dependiendo de la estructura de la columna, y con el nombre tomado de un campo de formulario en PHP]<br><br>
+				<b>Para editar registros:</b><br><br>
+				•	UPDATE tabla SET nombre = 'Matías', apellido = 'Fernandez', pais = 'USA', idioma = 'EN' WHERE id = '1' [Modifica el registro con ID 1 con los valores nombre: Matías, apellido: Fernández, pais: USA, idioma: EN de english]<br>
+				•	UPDATE tabla SET Idioma = 'EN' WHERE apellido = 'Palacio' AND nombre = 'Heidenber' [Modifica el idioma a EN de english donde el nombre sea Heidenber y el apellido sea Palacio]<br><br>
+				<b>Para eliminar registros:</b><br><br>
+				•	DELETE FROM tabla WHERE id = '1' [Borramos el registro]<br>
+				•	DELETE FROM tabla WHERE nombre = 'Heidenber' [Borramos todos los registros que tengan el nombre de Heidenber]<br><br>
+				<b>Para vaciar una tabla:</b><br><br>
+				•	TRUNCATE TABLE tabla [Vacía todos los registros de la tabla]<br><br>
+				Ahora que conocemos un poco de la sintaxis y las queries básicas, en los siguientes videos se observa como realizar la creación, conexión y modificaciones a una base de datos mediante PHP y MySQL.
+				</p>
+			<p><b>Videos de manejo de BD MySQL desde PHP:</b></p>	
+			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/PVe-Q2w3-WQ" frameborder="0" allowfullscreen></iframe></center>
+			<p><b>Parte 2:</b></p>	
+			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/nstMUcmBfBE" frameborder="0" allowfullscreen></iframe></center>
+			<p><b>Parte 3:</b></p>	
+			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/IiMXyvadxiI" frameborder="0" allowfullscreen></iframe></center>
+			<p><b>Parte 4:</b></p>	
+			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/akhhdrbrKDs" frameborder="0" allowfullscreen></iframe></center>
+			</article>
+
+		</section>
+
+		<aside>
+	<center><a href="http://www.unad.edu.co"><img src="img/logoUNAD.png" alt="UNAD"></a></center><br>
+		<center><p>Redes Sociales:</p>	<br><a href="https://www.facebook.com/UniversidadUNAD" target="_blank"><img alt="siguenos en facebook" height="40" src="http://3.bp.blogspot.com/-MQuocq7OzfU/UiXwUY81yQI/AAAAAAAAB0Q/h6-R_R2-buI/s1600/face.png" title="Siguenos en facebook" width="40" /></a>
+		<a href="https://twitter.com/UniversidadUNAD" target="_blank"><img alt="Siguenos en Twitter" height="40" src="http://2.bp.blogspot.com/-B0wCtNXYV3U/UiX1VnAQSrI/AAAAAAAAB6Q/ILY3m0NJVE8/s1600/Twitter+NEW.png" title="Siguenos en Twitter" width="40" /></a>
+		<a href="https://www.youtube.com/user/universidadunad" target="_blank"><img alt="Canal de youtube" height="40" src="http://4.bp.blogspot.com/-NFK4YtYPiXw/UiX1X0rq9pI/AAAAAAAAB7w/l_cIRw8Cij0/s1600/Youtube+alt+2.png" title="Canal de youtube" width="40" /></a>
+		<a href="https://www.flickr.com/photos/universidadunad" target="_blank"><img alt="sígueme en Flickr" height="40" src="http://4.bp.blogspot.com/-QBTrfViL7B4/UidhE6x0d5I/AAAAAAAACA4/Ono9wPptcfo/s1600/flickr.png" title="sígueme en Flickr" width="40" /></a>
+
+		</center><br>
+		<center><p>Contador de Visitas:</p><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter1.fcs.ovh/private/contadorvisitasgratis.php?c=zthgry3jqspswp1whtaa628efzea625b" border="0" title="Contador de visitas" alt="contador de visitas"></a></center>
+
+						
+		</aside>
+
+		<footer>
+
+			<h3>Desarrollado por: Heidenber Palacio Garzón
+				<br>Universidad Nacional Abierta y a Distancia UNAD - (2017)</h3>
+
+		</footer>
+
+	</div>
+
+	
+</body>
+
+<script src="js/modernizr.js"></script>
+<script src="js/prefixfree.js"></script>
+
+
+</html>

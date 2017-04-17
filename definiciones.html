@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="Heidenber Palacio" name="author">
+	<meta content="Sitio web con material de Programacion web" name="description">
+	<meta content="UNAD, programación web, html" name="keywords">	
+	<title>OVI Programación Web 1</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+	<div id="contenedor">
+		
+		<header>
+			<img src="img/header.png" alt="Banner">
+		</header>
+
+		<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="definiciones.html">Definiciones</a></li>
+			<li><a href="lecturas.html">Lecturas</a></li>
+			<li><a href="multimedia.html">Material multimedia</a></li>
+			<li><a href="autor.html">Autor</a></li>
+		</ul>
+
+		</nav>
+
+		<section>
+			<article>
+				
+				<h1>Herramientas para el Desarrollo WEB(Definiciones)</h1>
+
+				<h2>¿Qué es una base de datos?</h2>
+
+					<p>Una base de datos (cuya abreviatura es BD) es una entidad en la cual se pueden almacenar datos de manera estructurada, con la menor redundancia posible. Diferentes programas y diferentes usuarios deben poder utilizar estos datos. Por lo tanto, el concepto de base de datos generalmente está relacionado con el de red, ya que se debe poder compartir esta información. Generalmente se habla de un "Sistema de información" para designar a la estructura global que incluye todos los mecanismos para compartir datos.</p>
+
+				<h2>¿Por qué utilizar una base de datos?</h2>
+
+					<p>Una base de datos proporciona a los usuarios el acceso a datos, que pueden visualizar, ingresar o actualizar, en concordancia con los derechos de acceso que se les hayan otorgado. Se convierte más útil a medida que la cantidad de datos almacenados crece. <br><br>
+					Una base de datos puede ser local, es decir que puede utilizarla solo un usuario en un equipo, o puede ser distribuida, es decir que la información se almacena en equipos remotos y se puede acceder a ella a través de una red. <br><br>					La principal ventaja de utilizar bases de datos es que múltiples usuarios pueden acceder a ellas al mismo tiempo.
+					</p>
+				
+				<h2>¿Qué es PHP?</h2>
+
+					<p>PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML.
+					<br><br>Bien, pero ¿qué significa realmente? Un ejemplo nos aclarará las cosas:
+					</p>
+
+					<p>
+						<xmp>
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>Ejemplo</title>
+
+</head>
+
+<body>
+
+<?php
+echo "¡Hola, soy un script de PHP!";
+?>
+
+</body>
+
+</html>
+
+						</xmp>
+
+					</p>
+					
+					<p>
+						En lugar de usar muchos comandos para mostrar HTML (como en C o en Perl), las páginas de PHP contienen HTML con código incrustado que hace "algo" (en este caso, mostrar "¡Hola, soy un script de PHP!). El código de PHP está encerrado entre las etiquetas especiales de comienzo y final &lt;?php y ?&gt; que permiten entrar y salir del "modo PHP".
+					<br><br>
+					Lo que distingue a PHP de algo del lado del cliente como Javascript es que el código es ejecutado en el servidor, generando HTML y enviándolo al cliente. El cliente recibirá el resultado de ejecutar el script, aunque no se sabrá el código subyacente que era. El servidor web puede ser configurado incluso para que procese todos los ficheros HTML con PHP, por lo que no hay manera de que los usuarios puedan saber qué se tiene debajo de la manga.
+					<br><br>
+					Lo mejor de utilizar PHP es su extrema simplicidad para el principiante, pero a su vez ofrece muchas características avanzadas para los programadores profesionales. No sienta miedo de leer la larga lista de características de PHP. En unas pocas horas podrá empezar a escribir sus primeros scripts. 
+					</p>
+
+					<h2>¿Qué es MYSQL y para qué sirve? </h2>
+					<p>
+						Según la definición de Wikipedia Mysql es sistema de gestión de bases de datos relacional, multihilo y multiusuario con más de seis millones de instalaciones. Vale, pero esto en cristiano qué significa. 
+					<br><br>
+						Para que se entienda bien el concepto pondremos un ejemplo. Cuando tú tienes, por ejemplo, una página web, lo que tienes es un código que al abrir la URL de tu página web tu navegador lee y lo convierte en algo visual entendible para nosotros. Este código se ayuda en el caso de las páginas web de los estilos CSS para darle una parte visual, de la programación PHP (en este ejemplo) para generar acciones y procesar un contenido que tiene que estar almacenado de una forma. 
+					<br><br>
+						Es aquí donde entran las bases de datos, en el caso de las webs uno de los gestores más utilizados es MYSQL, un sistema que nos permite a través de una serie de sentencias, tener una información almacenada en una base de datos recuperarla en el momento en el que la necesitemos de una forma eficiente y rápida.
+					</p>
+
+					<h2>Servidor Web “WampServer”</h2>
+					<p>
+						WampServer es un entorno de desarrollo web para Windows en el cual se podrán crear aplicaciones web con Apache, PHP y base de datos en MySQL (motor de base de datos). Esta herramienta incluye además con un administrador de base de datos PHPMyAdmin con el cual podremos crear una nueva base de datos e ingresar la data de las tablas creadas en ella, realizar consultas y generar scripts SQL, como exportar e importar scripts de base de datos. WampServer ofrece a los desarrolladores herramientas necesarias para realizar aplicaciones web de manera local, con un sistema operativo (Windows), un manejador de base de datos (MySQL), un software de programación script web PHP. WampSever se caracteriza por que puede ser usado de forma libre es decir no debemos de contar con alguna licencia el cual nos permita el uso de la misma, ya que pertenece a la corriente de "open source".						
+					</p>
+						<h2>Utilidad</h2>
+					<p>
+						Su utilidad es importante a la hora de desarrollar aplicaciones web, ya que funciona al igual como si cuando trabajamos en un servidor web, ya que podemos ejecutar estas aplicaciones de manera local y ver como seria el funcionamiento antes de ser subidas a un hosting o servidor web. Además de ello podemos gestionar datos con la ayuda del motor de base de datos (MySQL) y su administrador (PHPMyAdmin).						
+					</p>
+				
+			</article>
+
+		</section>
+
+		<aside>
+		<center><a href="http://www.unad.edu.co"><img src="img/logoUNAD.png" alt="UNAD"></a></center><br>
+		<center><p>Redes Sociales:</p>	<br><a href="https://www.facebook.com/UniversidadUNAD" target="_blank"><img alt="siguenos en facebook" height="40" src="http://3.bp.blogspot.com/-MQuocq7OzfU/UiXwUY81yQI/AAAAAAAAB0Q/h6-R_R2-buI/s1600/face.png" title="Siguenos en facebook" width="40" /></a>
+		<a href="https://twitter.com/UniversidadUNAD" target="_blank"><img alt="Siguenos en Twitter" height="40" src="http://2.bp.blogspot.com/-B0wCtNXYV3U/UiX1VnAQSrI/AAAAAAAAB6Q/ILY3m0NJVE8/s1600/Twitter+NEW.png" title="Siguenos en Twitter" width="40" /></a>
+		<a href="https://www.youtube.com/user/universidadunad" target="_blank"><img alt="Canal de youtube" height="40" src="http://4.bp.blogspot.com/-NFK4YtYPiXw/UiX1X0rq9pI/AAAAAAAAB7w/l_cIRw8Cij0/s1600/Youtube+alt+2.png" title="Canal de youtube" width="40" /></a>
+		<a href="https://www.flickr.com/photos/universidadunad" target="_blank"><img alt="sígueme en Flickr" height="40" src="http://4.bp.blogspot.com/-QBTrfViL7B4/UidhE6x0d5I/AAAAAAAACA4/Ono9wPptcfo/s1600/flickr.png" title="sígueme en Flickr" width="40" /></a>
+
+		</center><br>
+		<center><p>Contador de Visitas:</p><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter1.fcs.ovh/private/contadorvisitasgratis.php?c=zthgry3jqspswp1whtaa628efzea625b" border="0" title="Contador de visitas" alt="contador de visitas"></a></center>
+
+						
+		</aside>
+
+		<footer>
+
+			<h3>Desarrollado por: Heidenber Palacio Garzón
+				<br>Universidad Nacional Abierta y a Distancia UNAD - (2017)</h3>
+
+		</footer>
+
+	</div>
+
+	
+</body>
+
+<script src="js/modernizr.js"></script>
+<script src="js/prefixfree.js"></script>
+
+
+</html>
