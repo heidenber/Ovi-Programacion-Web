@@ -1,3 +1,11 @@
+*{
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
 #contenedor{
 	width: 1000px;
 	height: auto;
@@ -5,11 +13,18 @@
 	position: relative;
 }	
 
+.link{
+	font-size: 20px;
+	color: #005883;
+	font-weight: bold;	
+	font-family: verdana;
+	text-decoration: underline;
+}
+
 body{
 
 	background-image: url(../img/fondo.png);
-	background-repeat: repeat-x;
-
+	background-repeat: repeat;
 }
 
 a{
@@ -43,37 +58,92 @@ h3{
 	color: #ffffff;
 	margin-left: 10px;
 	text-align: left;
+
+}
+
+h4{
+	font-family: verdana;
+	color: white;
+	margin: 5px;
+	font-size: 10px;
+	font-weight: normal;
+
 }
 
 header{
-
+	margin: auto;
 	width: 1000px;
 	height: 303px;
-}
+	
+	}
 
-nav{
+.navegacion{
+	min-width: 800px;
+	float: left;
 	margin-top: 10px;
-	width: 994px;
+	width: 1000px;
 	height: 70px;
 	background: #005883;
-	border: solid;
 	border-radius: 10px;
 	border-color: #005883;
+
 }
 
-ul{
+.navegacion ul{
 
-	margin: auto;
-	padding-top: 10px;
+list-style: none;
+
 }
 
+.menu >	li{
 
-li{
+	position: relative;
+	display: inline-block;
 
-	float: left;
-	list-style-type: none;
-	padding: 10px;
 }
+
+.menu > li > a {
+	display: block;
+	padding: 15px 20px; 
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #F0B429;
+	transition: all .3s;
+}
+
+.menu li a{
+	color: #ffffff;
+	padding: 23px;
+}
+
+.submenu{
+	position: absolute;
+	background: #005883;
+	width: 110%;
+	opacity: 0;
+	transition: opacity 1s;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #ffffff;
+	text-decoration: none;
+	
+}
+
+.menu li:hover .submenu{
+	display: visible;
+	opacity: 1;
+
+	}
+
 
 section{	
 
@@ -81,21 +151,21 @@ section{
 	background: #FFFFFF;
 	height: 600px;
 	float: left;
-	margin-top: 20px;
+	margin-top: 10px;
 	border: solid;
 	border-radius: 10px;
 	border-color: #005883;
-	overflow: scroll;;
+	overflow: scroll;
 
 }
 
 aside{	
-	width: 265px;
+	width: 277px;
 	background: #FFFFFF;
 	height: 600px;
 	float: left;
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
 	border: solid;
 	border-radius: 10px;
 	border-color: #005883;
@@ -104,17 +174,15 @@ aside{
 }
 
 footer{
-
 	width: 1000px;
-	height: 70px;
-	text-align: left;
+	height: auto;
+	text-align: right;
 	background: #005883;
 	float: left;
-	margin-top: 20px;
+	margin-top: 10px;
 	border-radius: 10px;
-	margin-bottom: 20px;
-	padding: 10px;
-	
+	margin-bottom: 10px;
+	padding: 5px;
 }
 
 p{
@@ -133,6 +201,11 @@ p{
 figure{
 
 width: 250px;
+margin: 2px;
+
+}
+
+iframe{
 margin: 2px;
 
 }
